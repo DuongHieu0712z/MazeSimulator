@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Maze_Simulator</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\maze.ico</ApplicationIcon>
+    <StartupObject>Maze_Simulator.App</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\maze.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\maze.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

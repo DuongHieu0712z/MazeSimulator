@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Maze_Simulator.Models.Cell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Maze_Simulator.Models"
+             d:DataContext="{d:DesignInstance Type=local:Cell}"
+             mc:Ignorable="d"
+             d:DesignHeight="30"
+             d:DesignWidth="30"
+             Background="Gray"
+             BorderBrush="Black"
+             BorderThickness="1"
+             Width="30"
+             Height="30">
+    <UserControl.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="Đặt lại"
+                      Command="{Binding ResetCommand}" />
+
+            <MenuItem Header="Bắt đầu"
+                      Command="{Binding ChangeStartCommand}" />
+
+            <MenuItem Header="Kết thúc"
+                      Command="{Binding ChangeEndCommand}" />
+        </ContextMenu>
+    </UserControl.ContextMenu>
+</UserControl>
